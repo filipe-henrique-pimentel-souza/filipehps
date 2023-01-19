@@ -1,0 +1,78 @@
+/* Requisitos
+Seu Portfólio Web deve ter um layout usando Box Model com as informações a seguir:
+
+Coloque seu nome, sua foto e a descrição que você escreveu sobre você dentro de blocos;
+
+OK - A descrição deve ficar ao lado da foto;
+
+OK - Centralize seu nome na página;
+
+OK - Use padding e coloque uma cor de fundo na sua foto que seja diferente da cor de fundo do resto da página;
+
+OK - Adicione margin e padding nos elementos que julgar necessário;
+
+OK - Coloque estilo somente nos itens ímpares da lista das suas habilidades.
+
+Dicas
+Use a função de “Inspecionar” do browser para analisar o estilo de outras páginas web;
+
+Você pode fazer alterações direto no console do browser, depois de inspecionar algum elemento na página:
+
+Na aba “Elementos”, à direita, tem uma lista com os seletores CSS aplicados ao elemento;
+Você pode adicionar novas regras CSS a esse elemento especificamente, escrevendo-as dentro de element.style no console do browser;
+Lembre-se de que as alterações não são salvas, então se você recarregar a página elas vão se perder. */
+#nome {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#descricao {
+    font-family: cursive;
+}
+body{
+    background-color: #bddac3;
+}
+#residencia{
+    font-size: 1em;
+    float: right;
+    text-align: left;
+    margin: 12% 20%;
+
+}
+ul li:nth-of-type(odd):hover{
+    font-size: 1em;
+    color: chocolate;
+}
+.css:hover{
+    font-size: 1em;
+    color: crimson;
+}
+
+main{
+    width: 50%;
+    text-align: justify;
+    margin: auto;
+}
+
+/* #fotoEDescricao{
+    width: 90%;
+    background-color: antiquewhite;
+    display: inline-block;
+    /* padding: ; */
+    /* min-width: 300px; 
+} */
+
+#fotoEDescricao p{
+    float: right;
+    width: 30%;
+    /* padding: 2%; */
+    padding: 12%;
+}
+
+#fotoEDescricao a{
+    float: left;
+    width: 40%;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: black;
+}
